@@ -36,13 +36,13 @@ function Navbar() {
         <Link href={logoHomeLink.href}>
           <Image width={100} src={logoHomeLink.image} alt="Logo" />
         </Link>
-        <ul className="hidden md:flex gap-6 flex-1 justify-around lg:justify-between max-w-[800px] ">
+        <ul className="hidden md:flex gap-6 flex-1 justify-around lg:justify-between max-w-[600px] ">
           {navLinks.map((element) => (
             <li key={element.name}>
               {" "}
               <Link
                 href={element.href}
-                className="uppercase font-semibold hover:font-bold px-2 py-1"
+                className="uppercase text-xs font-semibold hover:font-bold px-2 py-1"
               >
                 {element.name}
               </Link>
@@ -50,7 +50,11 @@ function Navbar() {
           ))}
         </ul>
         <div className="hidden lg:flex">
-          <Btn01 title="Pide tu cita" href="/" />
+          <Btn01
+            title="Pide tu cita"
+            href="/"
+            className="border-active hover:bg-active"
+          />
         </div>
         <div className="flex md:hidden">
           <RxHamburgerMenu size={40} color="#fff" />

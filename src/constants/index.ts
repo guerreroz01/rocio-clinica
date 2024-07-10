@@ -5,6 +5,8 @@ import implantsPic from "../../public/assets/implants.jpg";
 import threeShapePic from "../../public/assets/3shape.jpg";
 import dentalBridgePic from "../../public/assets/dental-bridge.png";
 import smileDesignPic from "../../public/assets/smile-design.jpg";
+import video01Src from "../../public/assets/videos/video.mp4";
+import clinicImage01Pic from "../../public/assets/foto-clinica-01.jpg";
 
 export const heroImg = heroPic;
 export const logoImg = logoPic;
@@ -12,10 +14,10 @@ export const implantsImg = implantsPic;
 export const threeShapeImg = threeShapePic;
 export const dentalBridgeImg = dentalBridgePic;
 export const smileDesignImg = smileDesignPic;
-
+export const clinicImage01Img = clinicImage01Pic;
 // Vídeos
 
-export const video01 = "../../public/assets/video.mp4";
+export const video01 = video01Src;
 
 // Enlaces
 export const navLinks = [
@@ -79,3 +81,31 @@ export const banner01 = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellendus maiores molestias praesentium consequuntur nihil",
   },
 ];
+
+// Seccion del vídeo
+export const videoSection = {
+  title: "Testimonios de Nuestros Pacientes",
+  description: "",
+  testimonials: [
+    {
+      stars: "⭐️⭐️⭐️⭐️⭐",
+      description:
+        "¡Increíble experiencia en Clínica Dental Salud Perfecta! Los implantes dentales han transformado mi sonrisa. El equipo fue amable y profesional en todo momento. ¡Altamente recomendados! - Laura G.",
+    },
+    {
+      stars: "⭐️⭐️⭐️⭐️⭐",
+      description:
+        "Tenía mucho miedo al dentista, pero aquí me hicieron sentir como en casa. Mi tratamiento fue un éxito y ahora no puedo dejar de sonreír. ¡Gracias! - Pedro M.",
+    },
+    {
+      stars: "⭐️⭐️⭐️⭐️⭐",
+      description:
+        "La mejor clínica dental que he visitado. Modernos, eficientes y muy atentos. Mis implantes dentales lucen y se sienten perfectos. - Sofía R.",
+    },
+  ],
+};
+
+// Sección de la clínica
+export const clinicInfo = {
+  image: clinicImage01Img,
+};
