@@ -1,7 +1,7 @@
 import { video01 } from "@/constants";
 import React from "react";
 import { Suspense } from "react";
-import { list } from "@vercel/blob";
+/*import { list } from "@vercel/blob";
 
 async function VideoComponent({ fileName }) {
   const { blobs } = await list({
@@ -16,13 +16,9 @@ async function VideoComponent({ fileName }) {
       Your browser does not support the video tag.
     </video>
   );
-}
+}*/
 function VideoSection() {
-  return (
-    <Suspense fallback={<p>Loading video...</p>}>
-      <VideoComponent fileName="my-video.mp4" />
-    </Suspense>
-  );
+  return <Suspense fallback={<p>Loading video...</p>}></Suspense>;
 }
 
 export default VideoSection;
