@@ -4,6 +4,7 @@ import { heroImg, heroTextContent } from "@/constants";
 import { FaAsterisk } from "react-icons/fa";
 import Chip from "./Chip";
 import Btn01 from "./Btn01";
+import { roboto_mono } from "@/fonts";
 
 function Hero() {
   return (
@@ -22,7 +23,9 @@ function Hero() {
               {heroTextContent.subtitle}
             </p>
           </div>
-          <h1 className="text-4xl lg:text-6xl my-10 font-bold">
+          <h1
+            className={`text-4xl lg:text-6xl my-10 font-bold ${roboto_mono.className}`}
+          >
             {heroTextContent.title}
           </h1>
           <div className="hidden lg:flex flex-wrap gap-6 mt-24 mb-6">
@@ -38,7 +41,7 @@ function Hero() {
             <p className="text-lg text-white">{heroTextContent.parragraph}</p>
           </div>
         </div>
-        <div className="hidden lg:flex backdrop-blur-2xl bg-white/20 rounded-3xl mb-10 max-w-xs w-1/3 mr-24 flex-col items-center pt-20">
+        <div className="hidden lg:flex backdrop-blur-lg bg-white/30 rounded-3xl mb-10 max-w-xs w-1/3 mr-24 flex-col items-center pt-20">
           <div className="relative overflow-hidden  w-60 h-60 rounded-full mb-10">
             <Image
               src={heroTextContent.promotion.img}

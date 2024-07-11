@@ -5,12 +5,12 @@ import React from "react";
 
 function BannerSection01() {
   return (
-    <section flex-wrapsection className="w-full bg-white py-20 text-gray-600">
+    <section flex-wrapsection className="w-full bg-bg py-20 text-gray-600">
       <div className="max-w-7xl mx-auto flex flex-col items-center md:flex-row justify-around gap-10">
         {banner01.map((element, i) => (
           <article
             key={`article-banner-${element.linkTitle}-${i}`}
-            className="flex flex-col items-center w-80 h-96 gap-6 pt-10 pb-10 border border-gray-400 rounded-2xl"
+            className="flex flex-col items-center w-80 h-96 gap-6 pt-10 pb-10 border border-gray-300 rounded-2xl bg-white"
           >
             <div className="relative w-32 h-32 rounded-full overflow-hidden">
               <Image

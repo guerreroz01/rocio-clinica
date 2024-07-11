@@ -1,24 +1,53 @@
-import { video01 } from "@/constants";
+import { video01, videoSection } from "@/constants";
 import React from "react";
 import { Suspense } from "react";
-/*import { list } from "@vercel/blob";
 
-async function VideoComponent({ fileName }) {
-  const { blobs } = await list({
-    prefix: fileName,
-    limit: 1,
-  });
-  const { url } = blobs[0];
-
+async function VideoComponent({ videoSrc }: { videoSrc: string }) {
   return (
-    <video controls preload="none" aria-label="Video player">
-      <source src={url} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <div className="w-full md:w-1/2 h-auto flex justify-center items-center">
+      <video
+        className="pointer-events-none"
+        autoPlay
+        loop
+        muted
+        playsInline={true}
+        key={videoSrc}
+      >
+        <source src={videoSrc} type="video/mp4" />
+      </video>
+    </div>
   );
-}*/
+}
 function VideoSection() {
   return <Suspense fallback={<p>Loading video...</p>}></Suspense>;
+  return (
+    <div className="w-full bg-black px-2">
+      <div className="w-full flex flex-col-reverse md:flex-row bg-black text-gray-200 max-w-7xl mx-auto md:justify-center">
+        <div className="flex-1 flex flex-col items-center py-8 ">
+          <h3 className="pt-6 pb-10 text-4xl font-semibold w-96 text-center">
+            {videoSection.title}
+          </h3>
+          <div className="">
+            {videoSection.testimonials.map((element, i) => (
+              <div
+                key={`video-section-testimonial-${element.description.substring(
+                  10
+                )}-${i}`}
+                className="py-4"
+              >
+                <p>
+                  {element.stars} - {element.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <Suspense fallback={<p>Loading video...</p>}>
+          <VideoComponent videoSrc={video01} />
+        </Suspense>
+      </div>
+    </div>
+  );
 }
 
 export default VideoSection;
