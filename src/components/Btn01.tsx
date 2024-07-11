@@ -6,16 +6,16 @@ interface Btn01Int {
   title: string;
   href?: string;
   onClick?: () => void;
-  className?: string;
+  classNames?: string;
 }
 
-function Btn01({ href, onClick, title, className }: Btn01Int) {
+function Btn01({ href, onClick, title, classNames }: Btn01Int) {
   if (!href) return <button onClick={onClick}>{title}</button>;
 
   return (
     <Link
       href={href}
-      className={`font-semibold border rounded-full px-6 py-4 flex items-center gap-4 hover:bg-white/70 hover:text-gray-900 ${className}`}
+      className={`font-semibold border rounded-full px-6 py-4 flex items-center gap-4 hover:bg-white/70 hover:text-gray-900 ${classNames}`}
     >
       {title}
       <IoArrowForwardOutline size={20} className="hover:text-gray-900" />

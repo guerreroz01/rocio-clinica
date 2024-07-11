@@ -5,8 +5,9 @@ import implantsPic from "../../public/assets/implants.jpg";
 import threeShapePic from "../../public/assets/3shape.jpg";
 import dentalBridgePic from "../../public/assets/dental-bridge.png";
 import smileDesignPic from "../../public/assets/smile-design.jpg";
-import video01Src from "../../public/assets/videos/video.mp4";
 import clinicImage01Pic from "../../public/assets/foto-clinica-01.jpg";
+import consultaPic from "../../public/assets/consulta.jpg";
+import explainPic from "../../public/assets/explicando.png";
 
 export const heroImg = heroPic;
 export const logoImg = logoPic;
@@ -15,7 +16,11 @@ export const threeShapeImg = threeShapePic;
 export const dentalBridgeImg = dentalBridgePic;
 export const smileDesignImg = smileDesignPic;
 export const clinicImage01Img = clinicImage01Pic;
+export const consultaImg = consultaPic;
+export const explainImg = explainPic;
+
 // Vídeos
+import video01Src from "../../public/assets/videos/video.mp4";
 
 export const video01 = video01Src;
 
@@ -108,4 +113,14 @@ export const videoSection = {
 // Sección de la clínica
 export const clinicInfo = {
   image: clinicImage01Img,
+  chip: "El Mejor Servicio",
+  title: "Dedicados a Darte",
+  description:
+    "La clínica dental Dra. Sonia García ofrece una atención odontológica integral desde el año 2001. En nuestra clínica puede confiar en un odontólogo con experiencia, formación continua y medios para ofrecerle una atención personalizada y de calidad.",
+};
+
+// Horarios
+export const horarios = {
+  title: "",
+  description: "",
 };

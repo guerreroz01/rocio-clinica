@@ -19,7 +19,6 @@ async function VideoComponent({ videoSrc }: { videoSrc: string }) {
   );
 }
 function VideoSection() {
-  return <Suspense fallback={<p>Loading video...</p>}></Suspense>;
   return (
     <div className="w-full bg-black px-2">
       <div className="w-full flex flex-col-reverse md:flex-row bg-black text-gray-200 max-w-7xl mx-auto md:justify-center">
