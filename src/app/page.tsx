@@ -4,6 +4,9 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import ClinicSection from "@/components/ClinicSection";
 import OpenHours from "@/components/OpenHours";
+import BannerSection02 from "@/components/BannerSection02";
+import BlogSection from "@/components/BlogSection";
+import Prueba from "@/components/Prueba";
 
 export default function Home() {
   return (
@@ -13,9 +16,10 @@ export default function Home() {
       <BannerSection01 />
       <VideoSection />
       <ClinicSection />
-      <BannerSection01 />
+      <BannerSection02 />
       <OpenHours />
-      <BannerSection01 />
+      <BlogSection />
+      <Prueba />
     </main>
   );
 }

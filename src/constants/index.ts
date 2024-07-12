@@ -1,3 +1,4 @@
+import CaserSvg from "@/components/CaserSvg";
 // Imagenes
 import heroPic from "../../public/assets/hero.jpg";
 import logoPic from "../../public/assets/logo.png";
@@ -8,6 +9,10 @@ import smileDesignPic from "../../public/assets/smile-design.jpg";
 import clinicImage01Pic from "../../public/assets/foto-clinica-01.jpg";
 import consultaPic from "../../public/assets/consulta.jpg";
 import explainPic from "../../public/assets/explicando.png";
+import caserSvg from "../../public/assets/caser.svg";
+import sosLogoPic from "../../public/assets/international-sos-logo.webp";
+import canalSaludPic from "../../public/assets/canal_salud.png";
+import asssaPic from "../../public/assets/asssa.png";
 
 export const heroImg = heroPic;
 export const logoImg = logoPic;
@@ -18,9 +23,14 @@ export const smileDesignImg = smileDesignPic;
 export const clinicImage01Img = clinicImage01Pic;
 export const consultaImg = consultaPic;
 export const explainImg = explainPic;
+export const caserSVG = caserSvg;
+export const sosLogoImg = sosLogoPic;
+export const canalSaludImg = canalSaludPic;
+export const asssaImg = asssaPic;
 
 // Vídeos
 import video01Src from "../../public/assets/videos/video.mp4";
+import SantaLuciaSvg from "@/components/SantaLuciaSvg";
 
 export const video01 = video01Src;
 
@@ -124,3 +134,42 @@ export const horarios = {
   title: "",
   description: "",
 };
+
+// Seguros dentales
+export const seguros = [
+  { href: "https://www.caser.es/seguros-dentales", image: CaserSvg },
+  { href: "https://www.internationalsos.es/", image: sosLogoImg },
+  { href: "https://www.canalsalud24.com/", image: canalSaludImg },
+  { href: "https://www.santalucia.es/", image: SantaLuciaSvg },
+  { href: "https://www.asssa.es/", image: asssaImg },
+];
+
+export const articles = [
+  {
+    chip: "Implantes",
+    title: "¿Como cuidar tus protesis dentales?",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo quos voluptatum fugit quas qui at voluptates",
+    href: "/",
+    image: dentalBridgeImg,
+    tag: "Implantes",
+  },
+  {
+    chip: "Estética",
+    title: "¿En que consiste el diseño de sonrisa?",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo quos voluptatum fugit quas qui at voluptates",
+    href: "/",
+    image: smileDesignImg,
+    tag: "Estética",
+  },
+  {
+    chip: "Tip",
+    title: "¿Que hacer y que no hacer despues de un blanqueamiento dental?",
+    description:
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorum explicabo quos voluptatum fugit quas qui at voluptates",
+    href: "/",
+    image: consultaImg,
+    tag: "Tip",
+  },
+];
