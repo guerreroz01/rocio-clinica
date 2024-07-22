@@ -43,7 +43,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex backdrop-blur-lg bg-white/30 rounded-3xl mb-10 max-w-xs w-1/3 mr-24 flex-col items-center pt-20">
+        <div className="hidden lg:flex backdrop-blur-lg bg-gray-600/30 rounded-3xl mb-10 max-w-xs w-1/3 mr-24 flex-col items-center pt-20">
           <div className="relative overflow-hidden  w-60 h-60 rounded-full mb-10">
             <Image
               src={heroTextContent.promotion.img}
