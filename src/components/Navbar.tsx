@@ -53,7 +53,7 @@ function Navbar() {
           <Btn01
             title="Pide tu cita"
             href="/"
-            className="border-active hover:bg-active"
+            classNames="border-active hover:bg-active"
           />
         </div>
         <div className="flex md:hidden">
