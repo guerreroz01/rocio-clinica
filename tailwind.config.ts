@@ -12,6 +12,7 @@ const config: Config = {
         bg: "#faf6f8a1",
         white: "#FFFEFF",
         active: "#cd6088",
+        black: "#0a0a0a",
       },
     },
   },

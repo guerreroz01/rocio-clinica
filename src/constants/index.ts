@@ -1,3 +1,10 @@
+// Iconos
+import { FaInstagram, FaFacebook, FaPinterest } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
+import { HiDevicePhoneMobile } from "react-icons/hi2";
+import { MdOutlineEmail } from "react-icons/md";
+
 import CaserSvg from "@/components/CaserSvg";
 // Imagenes
 import heroPic from "../../public/assets/hero.jpg";
@@ -13,6 +20,7 @@ import caserSvg from "../../public/assets/caser.svg";
 import sosLogoPic from "../../public/assets/international-sos-logo.webp";
 import canalSaludPic from "../../public/assets/canal_salud.png";
 import asssaPic from "../../public/assets/asssa.png";
+import cardPaymentsPic from "../../public/assets/cards_payments.png";
 
 export const heroImg = heroPic;
 export const logoImg = logoPic;
@@ -27,12 +35,19 @@ export const caserSVG = caserSvg;
 export const sosLogoImg = sosLogoPic;
 export const canalSaludImg = canalSaludPic;
 export const asssaImg = asssaPic;
+export const cardPaymentsImg = cardPaymentsPic;
 
 // Vídeos
 import video01Src from "../../public/assets/videos/video.mp4";
 import SantaLuciaSvg from "@/components/SantaLuciaSvg";
 
 export const video01 = video01Src;
+
+//Logo
+export const logoHomeLink = {
+  href: "/",
+  image: logoImg,
+};
 
 // Enlaces
 export const navLinks = [
@@ -42,9 +57,28 @@ export const navLinks = [
   { href: "/contacto", name: "Contacto" },
 ];
 
-export const logoHomeLink = {
-  href: "/",
-  image: logoImg,
+//Pie de página
+export const footerLinks = [
+  { href: "/politicas", name: "Políticas de Privacidad" },
+  { href: "/aviso-legal", name: "Aviso Legal" },
+  { href: "/politicas-cookies", name: "Políticas de Cookies" },
+];
+
+export const footerSocialLinks = [
+  { href: "@sg", name: "@Instagram", icon: FaInstagram },
+  { href: "@sg", name: "@Facebook", icon: FaFacebook },
+  { href: "@sg", name: "@X", icon: FaXTwitter },
+  { href: "@sg", name: "@Pinterest", icon: FaPinterest },
+];
+
+export const addres = {
+  addr: "C/ Vicente Blasco Ibañez, 102, 3º 03201 Elche Alicante",
+  tlf1: "965 430 206",
+  Tlf1Icon: TbDeviceLandlinePhone,
+  tlf2: "673 185 680",
+  Tlf2Icon: HiDevicePhoneMobile,
+  email: "info@clinicasoniagarcia.com",
+  EmailIcon: MdOutlineEmail,
 };
 
 // Home Hero text

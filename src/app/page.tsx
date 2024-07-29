@@ -7,6 +7,7 @@ import OpenHours from "@/components/OpenHours";
 import BannerSection02 from "@/components/BannerSection02";
 import BlogSection from "@/components/BlogSection";
 import Prueba from "@/components/Prueba";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
       <BannerSection02 />
       <OpenHours />
       <BlogSection />
-      <Prueba />
+      <Footer />
     </main>
   );
 }
